@@ -1,0 +1,640 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  /* background-color: #2389bf !important; */
+  font-family: cursive !important;
+}
+.custom-container{
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  background: white !important;
+}
+
+/* --------------Header css -------------- */
+
+.header{
+  width: 100%;
+  height: 90px;
+  background-color: #2388bf48 !important;
+  z-index: 999;
+}
+
+.navlist ul li {
+  font-size: 17px;
+  font-weight: bold;
+ 
+
+}
+.nav-link{
+  color: black !important;  
+}
+
+.nav-profile ul li{
+  margin: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+                                      
+
+/* ------------------Home css ----------------- */
+
+.page1{
+  width: 100%;
+  height:600px;
+  position:relative;
+  color: #fff;
+
+}
+.pg1_p{
+  position: absolute;
+  top: 30%;
+  left: 3%;
+}
+
+.offers{
+  font-size: 50px !important;
+  font-weight: bold !important;
+}
+
+.page1img{
+  position: absolute;
+  width: 100%;
+  height: 111%;
+  z-index: -999;
+  /* opacity: 0.6; */
+  filter: brightness(0.8);
+ 
+}
+/* .mmm {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -999;
+  overflow: hidden;
+} */
+
+.botton_1{
+  background-color: #fff !important;
+  border-radius: 0px !important;
+}
+.botton_2{
+  border-radius: 0px !important;
+  border-color: black !important;
+  margin-left: 10px;
+}
+.botton_1:hover{
+  background-color: black !important;
+  box-shadow: 0px 0px 20px 2px black;
+    border: none;
+    color: white !important;
+    text-shadow: 2px 2px 6px white;
+}
+.botton_2:hover{
+  background-color: white !important;
+  box-shadow: 0px 0px 20px 2px black;
+    border: none;
+    color: black !important;
+    text-shadow: 2px 2px 6px black;
+}
+
+.page2{
+  width: 100%;
+  height: 200px !important;
+  position: relative;
+  background-color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mySwiper{
+  width: 85%;
+  
+
+}
+
+
+
+
+
+.boxes3{
+  float: left;
+  
+}
+.box3{
+  width:420px;
+  height: 520px;
+  background-color: red;
+}
+
+.page3{
+  width: 100%;
+  /* position: relative; */
+  background-color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cards{
+  width:350px !important;
+  height: 450px !important;
+  position: relative;
+  background-color: white;
+  margin:30px;
+  padding: 0px !important;
+  
+
+}
+.cards img{
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+} 
+.cards_text{
+  position: absolute;
+  bottom: 15px;
+  padding: 10px;
+  color:white;
+
+}
+
+.cards_btn{
+  background-color: #fff !important;
+  margin-top: 10px;
+  border-radius: none !important;
+  font-weight: 600 !important;
+}
+.cards_btn:hover{
+    background-color: #2389bf !important;
+    box-shadow: 0px 0px 20px 2px #2389bf;
+    border: none;
+    color: white !important;
+    text-shadow: 2px 2px 2px black;
+}
+.allproducts{
+  width: 100%;
+  height: auto !important;
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.page4{
+  width: 100%;
+  height: auto !important;
+  position: relative;
+  padding: 20px;
+  background-color: white !important;
+  /* text-align: center; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+
+}
+
+.fillter{
+  width: 19%;
+  height: 400px !important;
+  background-color: #2388bf5f !important;
+  position: sticky !important;
+  top: 10%;
+  bottom: 10%;  
+  left: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column; 
+}
+.category_btn{
+  width: 90% !important;
+  height: 40px !important;
+  /* box-shadow: 0px 0px 0px 1px #2389bf; */
+  background-image:linear-gradient(90deg,#2389bf,rgba(255, 192, 203, 0));
+  border-radius: 0px !important;
+  overflow: hidden;
+  color: white !important;
+
+}
+
+.page4_text{
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.products{
+  width: 200px;
+  height: 300px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin: 20px;
+  margin-top: 20px;
+  float: left;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.product_img{
+ width: 100%;
+ height: 65%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+ padding: 5px;
+ transition: 0.5s;
+ border-radius:10px;
+}
+.product_img img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  border-radius: 10px;
+
+}
+.product_img:hover .img_product{
+  transform: scale(1.3);
+  transition: 0.5s;
+}
+.product_img:hover{
+  /* transform: rotate(10deg); */
+  transition: 0.5s;
+}
+.about_product{
+  width: 100%;
+  height: 35%;
+  padding: 4px;
+  position: relative;
+
+}
+.category_text{
+  font-size: 12px;
+  color: gray;
+}
+.about_product h6:hover{
+  color: orange !important;
+  cursor: pointer;
+}
+.about_product h4:hover{
+  color: orange !important;
+  cursor: pointer;
+}
+
+.addtocard{
+  top: 50px;
+  right: 10px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color:#2389bf ;
+  z-index: 999;
+}
+.addtocard:hover{
+  background-color: #2389bf !important;
+  box-shadow: 0px 0px 20px 2px #2389bf;
+  border: none;
+  color: white !important;
+  text-shadow: 2px 2px 2px black;
+}
+
+
+.page5{
+  width: 100%;
+  height:550px !important;
+  position:relative;
+  overflow: hidden;
+  color: #fff;
+}
+.pg5_p{
+  position: absolute;
+  top: 138px;
+  left: 58px;
+}
+.page5img{
+  width: 100%;
+  height: 130% !important;
+  position:absolute;
+
+  z-index: -999;
+
+}
+
+.featurekey{
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+
+/* -----------Spacial css-------------  */
+
+.spacess{
+  width: 100%;
+  height: 100px;
+  background-color:white;
+}
+
+/* -------------Men component css ---------- */
+
+.custom_container{
+  /* background-color: #2389bf !important; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.mendescription{
+  width: 100% !important  ;
+  height: auto !important;
+  position: relative;
+  top: 10%;
+  background-color:white !important;
+  padding: 20px;
+}
+
+
+.every_btn_page{
+  width: 100% !important;
+  height: 54px;
+  /* background-color: #2389bf !important; */
+  border-color:#2389bf !important ;
+  color: black !important;
+  font-weight: bold !important;
+}
+
+.every_btn_page:hover{
+  background-color: #2389bf !important;
+    box-shadow: 0px 0px 20px 2px #2389bf;
+    border: none;
+    color: white !important;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+
+
+/* -----------Footer css ------------ */
+.footer{
+    height: auto !important;
+    background-color: #2389bf;
+}
+
+
+.footer_top{
+  border-bottom-color: 1px solid;
+}
+
+.footer_icons i{
+  margin: 10px;
+  font-size: 20px;
+  color: black;
+  
+}
+.footer_icons i:hover{
+ color: orange !important;
+
+}
+.footer_bottom{
+  background-color: #2389bf;
+}
+
+
+/* -------------------loder--------------------------------- */
+
+.loaders{
+  width: 100%;
+  height: 500px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-right-color: #25b09b;
+  animation: l15 1s infinite linear;
+}
+.loader::before,
+.loader::after {    
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+  animation: l15 2s infinite;
+}
+.loader::after {
+  margin: 8px;
+  animation-duration: 3s;
+}
+@keyframes l15{ 
+  100%{transform: rotate(1turn)}
+}
+
+
+.products, .cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product, .cart-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 16px;
+  margin: 16px;
+  max-width: 200px;
+  text-align: left;
+}
+
+.product img, .cart-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* -------------------------------cart css -------------------------------- */
+
+
+
+
+
+
+/* --------------media qurey------------- */
+
+  
+@media only screen and (max-width: 600px) {
+
+  .header {
+    width: 100%;
+    height: 65px;
+    background-color: rgb(255 255 255 / 12%) !important;
+}
+
+.navlist{
+  background-color: black;
+  z-index: 999;
+  padding: 10px;
+  position: absolute;
+  top: 70px;
+  width: 93%;
+  border-radius: 5px;
+  color: white !important;
+}
+
+.nav-link{
+  color: white !important;
+}
+
+
+
+  .page1 {
+    width: 100%;
+    height: 273px;
+    position: relative;
+}
+
+.pg1_p{
+  position: absolute;
+  top: 28%;
+  left: 7%;
+} 
+.offers{
+  font-size: 22px !important;
+  font-weight: bold !important;
+}
+.botton_2{
+  margin: 10px 6px;
+}
+.botton_1{
+  margin: 0px 6px;
+}
+
+.page2{
+  height: 150px !important;
+}
+.swiper-slide{
+ left: 30%;
+
+}
+.cards{
+  margin-left: 55px;
+
+}
+
+.spacess {
+  width: 100%;
+  height: 68px;
+  background-color: #2389bf;
+}
+
+.page5 {
+  width: 100%;
+  height: 273px !important;
+  position: relative;
+}
+.pg5_p{
+  top: 48px;
+  left: 26px;
+}
+.pg5_des{
+  display: none;
+}
+
+.footer_top p{
+  font-size: 13px !important ;
+}
+
+.footer_bottom{
+  display: flex;
+  flex-direction: column;
+}
+.mid_footer{
+  display: flex !important;
+  font-size: 15px;
+  padding: 0;
+}
+
+.ulli_footer{
+  width: 50% !important;
+  float: left;
+}
+
+/* ----Single page------ */
+
+
+.productimg{
+  width: 100% !important;
+  height: 350px !important;
+  padding: 10px;
+
+}
+.otherimg{
+  width: 100% !important;
+  height: 100px !important;
+  /* background-color: #2389bf; */
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-evenly !important;
+  align-items: center !important;
+  
+}
+.otherimg img {
+  width: 30% !important;
+  height: 100% !important;
+ 
+}
+.item_image{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.fillter{
+  width: 100% !important;
+  height: 100px !important;
+  float: none;
+  position: none !important;
+  top: 10px;
+  display: flex;
+
+}
+
+
+
+.page4{
+  width: 100%;
+  
+}
+
+.allproducts {
+  width: 100% !important;
+  height: auto !important;
+  display: flex;
+  flex-direction: column;
+}
+.products{
+  margin: 35px;
+}
+
+}
+
+
+
+
+
+
