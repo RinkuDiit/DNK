@@ -56,15 +56,14 @@ function Everythings() {
        <div className="spacess"></div>
        <div style={{width:'19%', float:'left'}} className=" fillter">
                 <h2>Categories</h2>
-               
-                  <button className='btn category_btn' onClick={categories} value={'products'}>All</button>
+                <div className="categories">
+                <button className='btn category_btn' onClick={categories} value={'products'}>All</button>
                   <button className='btn category_btn' onClick={categories} value={'categories/1/products'}>Clothes</button>
                   <button className='btn category_btn' onClick={categories} value={'categories/2/products'}>Electronics</button>
                   <button className='btn category_btn' onClick={categories} value={'categories/3/products'}>Furniture</button>
                   <button className='btn category_btn' onClick={categories} value={'categories/4/products'}>Shoes</button>
-
-                
-
+                </div>
+               
             </div>
           <div style={{width:'81%', float:'left'}} className='loaders'>
             
@@ -88,18 +87,21 @@ function Everythings() {
                 <p>Shop here </p>
                 <p>Most strusted e-commerce platform </p>
             </div>
+            <div className="custom_container">
+
           {/* <div className="container"> */}
           <div className="row">
            <div className="allproducts">
            <div className=" fillter">
                 <h2>Categories</h2>
                
-                  <button className='btn category_btn' onClick={categories} value={'products'}>All</button>
+                <div className="categories">
+                <button className='btn category_btn' onClick={categories} value={'products'}>All</button>
                   <button className='btn category_btn' onClick={categories} value={'categories/1/products'}>Clothes</button>
                   <button className='btn category_btn' onClick={categories} value={'categories/2/products'}>Electronics</button>
                   <button className='btn category_btn' onClick={categories} value={'categories/3/products'}>Furniture</button>
                   <button className='btn category_btn' onClick={categories} value={'categories/4/products'}>Shoes</button>
-
+                </div>
                 
 
             </div>
@@ -127,7 +129,8 @@ function Everythings() {
         </div>
           </div>
         </div>
-        // </div>
+        {/* // </div> */}
+        </div>
    
   )
 }

@@ -35,7 +35,7 @@ function Jewelerys() {
   return (
     <div>
               <div className="spacess"></div>
-              <div className="custom_container">
+              <div className="container">
             <div className="row">
             <div className="col-md-12 mendescription">
                 <h1>SHOES</h1>
