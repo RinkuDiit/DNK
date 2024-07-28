@@ -634,10 +634,10 @@ body{
   flex-direction: column;
 }
 .products{
-  width: 125px !important;
+width: 136px !important;
   height: 215px !important;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  margin: 3px;
+  margin: 11px;
   margin-top: 20px;
   float: left;
   overflow: hidden;
