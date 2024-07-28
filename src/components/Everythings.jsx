@@ -87,7 +87,7 @@ function Everythings() {
                 <p>Shop here </p>
                 <p>Most strusted e-commerce platform </p>
             </div>
-            <div className="custom_container">
+            {/* <div className="custom_container"> */}
 
           {/* <div className="container"> */}
           <div className="row">
@@ -128,7 +128,7 @@ function Everythings() {
 
         </div>
           </div>
-        </div>
+        {/* </div> */}
         {/* // </div> */}
         </div>
    
