@@ -303,7 +303,7 @@ body{
   justify-content: center;
   align-items: center;
   border-color:#2389bf ;
-  z-index: 999;
+
 }
 .addtocard:hover{
   background-color: #2389bf !important;
@@ -623,6 +623,8 @@ body{
   position: none !important;
   top: 10px;
   display: flex;
+  background-color: #2389bf !important;
+  z-index: 999;
 
 }
 .categories{
@@ -669,7 +671,7 @@ width: 146px !important;
 }
 .product_img {
   width: 100%;
-  height: 60%;
+  height: 57%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -680,7 +682,7 @@ width: 146px !important;
 }
 .about_product {
   width: 100%;
-  height: 40%;
+  height: 43%;
   padding: 4px;
   position: relative;
 }
