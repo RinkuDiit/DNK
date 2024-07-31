@@ -61,7 +61,7 @@ function Apiallproduct() {
         </div>
       )))}
 
-      <div style={{width:'100%'}}><Link to='/everythings'><button className='btn every_btn_page'>FIND MORE</button></Link></div>
+      <div style={{width:'90%',margin:'7px'}}><Link to='/everythings'><button className='btn every_btn_page'>FIND MORE</button></Link></div>
     </div>
     </div>
     </div>

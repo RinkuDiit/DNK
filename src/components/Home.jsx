@@ -80,7 +80,7 @@ function Home() {
 
                <div className="cards_text">
                     <h1>20% Off On Tank Tops</h1>
-                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</b> <br />
                     <Link to='/cloths'><div className="btn cards_btn ">SHOP NOW</div></Link>
                </div>
                   
@@ -90,8 +90,8 @@ function Home() {
                     <img src={require('../components/img/men-fashion-free-img.jpg')}alt="" />
                     <div className="cards_text">
                     <h1>Latest Eyewear For You</h1>
-                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</b>
-                    <Link to='/cloths'><div className="btn cards_btn ">SHOP NOW</div></Link>               </div>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</b> <br />
+                    <Link to='/cloths'><div className="btn cards_btn ">SHOP NOW</div></Link> </div>
                  
                </div>
                <div className="col-md-4 cards">
@@ -99,7 +99,7 @@ function Home() {
                   <img src={require('../components/img/footwear-free-img.jpg')}alt="" />
                   <div className="cards_text">
                     <h1>20% Off On Shoes</h1>
-                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</b>
+                    <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</b> <br />
                     <Link to='/shoes'><div className="btn cards_btn ">SHOP NOW</div></Link>
                     </div>
           
