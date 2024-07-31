@@ -8,12 +8,10 @@ import Accessories from './components/Accessories'
 import Jewelerys from './components/Shoes'
 import Everythings from './components/Everythings'
 import Footer from './components/Footer'
-import ImageComponent from './components/ImageComponent'
 import Singleproduct from './components/Singleproduct'
-import ParentComponent from './components/try/ParentComponent '
-import ChildComponent from './components/try/ChildComponent'
 import Mycart from './components/Mycart'
 import About from './components/About'
+import Contact from './components/Contact'
 
 
 function App() {
@@ -31,6 +29,7 @@ function App() {
             <Route path='/singleproduct/:id' element={<Singleproduct/>} />
             <Route path='/cart' element={<Mycart/>} />
             <Route path='/about' element={<About/>} />
+            <Route path='/contact' element={<Contact/>} />
 
 
             {/* <Route path='/' element={<ParentComponent/>}  />

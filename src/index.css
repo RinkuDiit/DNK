@@ -77,14 +77,7 @@ a{
   filter: brightness(0.8);
  
 }
-/* .mmm {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  z-index: -999;
-  overflow: hidden;
-} */
+
 
 .botton_1{
   background-color: #fff !important;
@@ -545,6 +538,20 @@ a{
 
 }
 
+/* ----------------------------- ontact css -------------------- */
+
+.contact{
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+
+}
+.contact img {
+  width: 100%;
+  height: 130%;
+  overflow-x: hidden;
+}
+
 
 
 
@@ -698,7 +705,6 @@ a{
   top: 10px;
   display: flex;
   background-color: #2389bf !important;
-  /* z-index: 999; */
 
 }
 .categories{
@@ -722,7 +728,6 @@ a{
   background-color: white !important;
   /* text-align: center; */
   display: block !important;
-  z-index: -999;
   display: flex !important;
   justify-content: center;
   
@@ -799,6 +804,16 @@ width: 146px !important;
 }
 .team_members h4{
   font-size: 20px;
+}
+.contact{
+  width: 100%;
+  height: 300px !important;
+  overflow: hidden !important ;
+
+}
+.contact img {
+  width: 100%;
+  height: 130%;
 }
 
 }

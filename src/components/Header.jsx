@@ -58,7 +58,7 @@ function Header() {
 <div className="nav-profile">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <Link style={{color:'black'}} to='/about'><li  class="nav-item">About</li></Link>
-        <li class="nav-item">Help</li>
+        <Link style={{color:'black'}} to='/contact'><li  class="nav-item">Contact</li></Link>
         <Link style={{color:'black'}} to='/cart'><li class="nav-item"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"><sup>{mycard}</sup></i></li></Link>
         <Link style={{color:'black'}} to='/profile'><li class="nav-item"><i class="fa fa-user fa-2x" aria-hidden="true"></i></li></Link>
 

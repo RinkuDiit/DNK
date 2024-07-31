@@ -37,32 +37,32 @@ const About = () => {
 
          <div className="team_members">
           <img style={{height:'50%'}} src={require('../components/img/team1-free-img.png')} alt="" />
-          <h4>Harvey Spector</h4>
-          <h6>Founder - CEO</h6>
+          <h4>Jessica Pearson</h4>
+          <h6>COO</h6>
          </div>
 
          <div className="team_members">
           <img style={{height:'50%'}} src={require('../components/img/team3-free-img.png')} alt="" />
-          <h4>Harvey Spector</h4>
-          <h6>Founder - CEO</h6>
+          <h4>Rachel Zain</h4>
+          <h6>Marketing Head</h6>
          </div>
 
          <div className="team_members">
           <img style={{height:'50%'}} src={require('../components/img/team4free-img.png')} alt="" />
-          <h4>Harvey Spector</h4>
-          <h6>Founder - CEO</h6>
+          <h4>Mike Ross</h4>
+          <h6>Intern Designer</h6>
          </div>
 
          <div className="team_members">
           <img style={{height:'50%'}} src={require('../components/img/team5-free-img.png')} alt="" />
-          <h4>Harvey Spector</h4>
-          <h6>Founder - CEO</h6>
+          <h4>Luise Litt</h4>
+          <h6>Lead Developer</h6>
          </div>
 
          <div className="team_members">
           <img style={{height:'50%'}} src={require('../components/img/team6-free-img.png')} alt="" />
-          <h4>Harvey Spector</h4>
-          <h6>Founder - CEO</h6>
+          <h4>Katrina Bennett</h4>
+          <h6>Intern Designer</h6>
          </div>
         </div>
 
