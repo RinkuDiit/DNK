@@ -13,6 +13,7 @@ import Singleproduct from './components/Singleproduct'
 import ParentComponent from './components/try/ParentComponent '
 import ChildComponent from './components/try/ChildComponent'
 import Mycart from './components/Mycart'
+import About from './components/About'
 
 
 function App() {
@@ -29,6 +30,9 @@ function App() {
             <Route path='/shoes' element={<Jewelerys/>} />
             <Route path='/singleproduct/:id' element={<Singleproduct/>} />
             <Route path='/cart' element={<Mycart/>} />
+            <Route path='/about' element={<About/>} />
+
+
             {/* <Route path='/' element={<ParentComponent/>}  />
             <Route path='/child' element={<ChildComponent/>}  /> */}
 

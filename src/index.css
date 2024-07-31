@@ -8,6 +8,9 @@ body{
   /* background-color: #2389bf !important; */
   font-family: cursive !important;
 }
+a{
+  text-decoration: none !important;
+}
 .custom-container{
   padding-left: 10px !important;
   padding-right: 10px !important;
@@ -39,6 +42,9 @@ body{
   font-weight: 400;
   cursor: pointer;
 }
+.desk-profile{
+  display: none;
+}
 
                                       
 
@@ -65,7 +71,7 @@ body{
 .page1img{
   position: absolute;
   width: 100%;
-  height: 111%;
+  height: 121%;
   z-index: -999;
   /* opacity: 0.6; */
   filter: brightness(0.8);
@@ -197,7 +203,7 @@ body{
   /* text-align: center; */
   display: flex;
   flex-wrap: wrap;
-  justify-content:flex-start;
+  justify-content:center;
 
 }
 
@@ -476,6 +482,74 @@ body{
 }
 
 
+/* -----------------------------------about page---------------------------------------- */
+
+
+
+.about {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+  
+}
+.about h2{
+  border-bottom:4px solid #2389bf ;
+}
+.teams{
+  padding-top: 50px;
+  background-color: rgba(128, 128, 128, 0.132);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teams h2{
+  border-bottom:4px solid #2389bf ;
+}
+.allTeams{
+  width: 60%;
+
+}
+
+.team_members{
+  width: 30%;
+  height: 250px;
+  background-color: #80808021;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  float: left;
+  margin: 10px;
+  border-radius: 5px;
+}
+.headquter{
+  text-align: center;
+  height: auto !important;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  float: left;
+}
+
+.dnk_headQuter img{
+  width:100%;
+  height:90%;
+  position: absolute;
+  left: 0;
+  z-index: -999;
+  filter: brightness(0.4);
+
+}
+
+
+
+
+
+
 /* -------------------------------cart css -------------------------------- */
 
 
@@ -483,10 +557,10 @@ body{
 
 
 
-/* --------------media qurey------------- */
+/* ------------------------------------media qurey----------------------------- */
 
   
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px  ) {
 
   body{
     font-family: sans-serif !important;
@@ -517,13 +591,13 @@ body{
 
   .page1 {
     width: 100%;
-    height: 273px;
+    height: 368px;
     position: relative;
 }
 
 .pg1_p{
   position: absolute;
-  top: 28%;
+  top: 39%;
   left: 7%;
 } 
 .offers{
@@ -624,7 +698,7 @@ body{
   top: 10px;
   display: flex;
   background-color: #2389bf !important;
-  z-index: 999;
+  /* z-index: 999; */
 
 }
 .categories{
@@ -648,6 +722,9 @@ body{
   background-color: white !important;
   /* text-align: center; */
   display: block !important;
+  z-index: -999;
+  display: flex !important;
+  justify-content: center;
   
 }
 
@@ -689,6 +766,39 @@ width: 146px !important;
 
 .about_product h6{
   font-size: 12px !important;
+}
+
+.desk-profile{
+  display: block;
+}
+.nav-profile{
+  display: none;
+}
+.navbar-toggler{
+
+  border: none !important;
+}
+
+.navbar-toggler:focus{
+  box-shadow: none !important;
+}
+.about {
+  text-align: center;
+  width:100% !important;
+  
+}
+.allTeams{
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.team_members{
+  width: 43%;
+}
+.team_members h4{
+  font-size: 20px;
 }
 
 }

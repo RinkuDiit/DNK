@@ -7,7 +7,10 @@ function CardPage() {
     console.log(card)
 
   return (
-    <div>CardPage</div>
+    <div>
+       <div className="spacess"></div>
+       <div className="h2">cart</div>
+    </div>
   )
 }
 

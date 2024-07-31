@@ -43,37 +43,6 @@ function Everythings() {
     setAddcart([...addcart, cartItem]);
   }
 
- 
- 
- 
- 
-
-
-
-  if (!Alldata.length) {
-    return(
-     <>
-       <div className="spacess"></div>
-       <div style={{width:'19%', float:'left'}} className=" fillter">
-                <h2>Categories</h2>
-                <div className="categories">
-                <button className='btn category_btn' onClick={categories} value={'products'}>All</button>
-                  <button className='btn category_btn' onClick={categories} value={'categories/1/products'}>Clothes</button>
-                  <button className='btn category_btn' onClick={categories} value={'categories/2/products'}>Electronics</button>
-                  <button className='btn category_btn' onClick={categories} value={'categories/3/products'}>Furniture</button>
-                  <button className='btn category_btn' onClick={categories} value={'categories/4/products'}>Shoes</button>
-                </div>
-               
-            </div>
-          <div style={{width:'81%', float:'left'}} className='loaders'>
-            
-           <div class="loader"></div>
-         </div>;
-     </>
-   )
- }
-
-
 
 
   return (
@@ -106,7 +75,10 @@ function Everythings() {
 
             </div>
             <div className=" page4">
-     {Alldata.map((item) => ( 
+            {!Alldata.length ? (
+        <div className="loaders"><div class="loader"></div></div> // Your loader component or HTML
+      ) : (
+     Alldata.map((item) => ( 
         <div className="products" key={item.id}>
           <div className="product_img">
           <Link to={'/singleproduct/'+item.id}><img
@@ -122,7 +94,7 @@ function Everythings() {
           <p>₹{item.price}0</p></Link>
           </div>
         </div>
-      ))}
+      )))}
             </div>
            </div>
 

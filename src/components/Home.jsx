@@ -81,7 +81,7 @@ function Home() {
                <div className="cards_text">
                     <h1>20% Off On Tank Tops</h1>
                     <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</b>
-                    <Link to='/women'><div className="btn cards_btn ">SHOP NOW</div></Link>
+                    <Link to='/cloths'><div className="btn cards_btn ">SHOP NOW</div></Link>
                </div>
                   
                </div>
@@ -91,7 +91,7 @@ function Home() {
                     <div className="cards_text">
                     <h1>Latest Eyewear For You</h1>
                     <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</b>
-                    <Link to='/men'><div className="btn cards_btn ">SHOP NOW</div></Link>               </div>
+                    <Link to='/cloths'><div className="btn cards_btn ">SHOP NOW</div></Link>               </div>
                  
                </div>
                <div className="col-md-4 cards">
@@ -100,7 +100,7 @@ function Home() {
                   <div className="cards_text">
                     <h1>20% Off On Shoes</h1>
                     <b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac dictum.</b>
-                    <Link to='/jewelerys'><div className="btn cards_btn ">SHOP NOW</div></Link>
+                    <Link to='/shoes'><div className="btn cards_btn ">SHOP NOW</div></Link>
                     </div>
           
                </div>
