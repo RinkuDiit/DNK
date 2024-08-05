@@ -1,6 +1,11 @@
 import React from 'react'
 
 function Contact() {
+
+    const sendsms = () =>{
+        alert("SMS Sent");
+    }
+
   return (
     <div>
         <div className="contact">
@@ -37,6 +42,7 @@ function Contact() {
                 </div>
             </div>
             <div className="tell_us">
+                <div className="container">
                 <div className="row">
                     <div className="col-md-6 tell_uss">
                         <h1>You tell us. We listen.</h1>
@@ -45,17 +51,20 @@ function Contact() {
                         
                     </div>
                     <div className="col-md-6 sumbite_form">
-                        <form>
-                           <input type="text" placeholder='Name' /> <br />
-                           <input type="text" placeholder='Name' /> <br />
-                           <input type="text" placeholder='Name' /><br />
-                           <input type="text" placeholder='Name' /><br />
-                           <div className="btn">Submite</div>
+                        <form onSubmit={sendsms}>
+                           <input type="text" placeholder='Name' required /> <br />
+                           <input type="text" placeholder='Subject'  /> <br />
+                           <input type="text" placeholder='E-mail' required /><br />
+                           <textarea style={{height:'200px', width:'100%', marginTop:'10px'}} type="text" placeholder='Message' required /><br /> <br />
+                           <button type='submit' style={{backgroundColor:'#2389bf'}} className="btn">Submite</button>
                         </form>
                     </div>
                 </div>
             </div>
+            </div>
         </div>
+
+       
     </div>
   )
 }

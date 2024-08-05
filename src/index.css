@@ -41,7 +41,7 @@ a{
   font-size: 15px;
   font-weight: 400;
   cursor: pointer;
-}
+ }
 .desk-profile{
   display: none;
 }
@@ -115,11 +115,9 @@ a{
   align-items: center;
   justify-content: center;
 }
-.mySwiper{
+/* .mySwiper{
   width: 85%;
-  
-
-}
+  } */
 
 
 
@@ -173,6 +171,7 @@ a{
   margin-top: 10px;
   border-radius: none !important;
   font-weight: 600 !important;
+  border-color: blue !important;
 }
 .cards_btn:hover{
     background-color: #2389bf !important;
@@ -397,6 +396,7 @@ a{
 .footer{
     height: auto !important;
     background-color: #2389bf;
+    margin-bottom: 0px !important;
 }
 
 
@@ -496,7 +496,6 @@ a{
 }
 .teams{
   padding-top: 50px;
-  background-color: rgba(128, 128, 128, 0.132);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -506,6 +505,7 @@ a{
 }
 .allTeams{
   width: 60%;
+  margin: 90px;
 
 }
 
@@ -540,8 +540,38 @@ a{
   filter: brightness(0.4);
 
 }
+.followus{
+  width: 100%;
+  height: 400px;
+  /* background-color:red; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.followus img{
+  width: 100%;
+  height: 140%;
+  position: fixed;
+  z-index: -999;
+  top: 0;
+}
+.followPage{
+  width: 400px;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.followPage h1{
+  border-bottom:4px solid #2389bf;
+}
+.followPage .footer_icons i:hover{
+  color: #2389bf !important;
+}
 
-/* ----------------------------- ontact css -------------------- */
+/* ----------------------------- contact css -------------------- */
 
 .contact{
   width: 100%;
@@ -556,18 +586,19 @@ a{
 .contact h1{
   position: absolute;
   color: #fff;
-  z-index: 999;
   font-size: 60px;
   border-bottom: 4px solid #2389bf;
 }
 .contact img {
   width: 100%;
   height: 130%;
-  overflow-x: hidden;
+  position: absolute;
+  /* z-index: -999; */
   filter: brightness(0.7);
 }
 
 .helps{
+  background-color: #f0efef;
   width: 100%;
   height: auto;
   display: flex;
@@ -589,7 +620,7 @@ a{
 .query{
   width: 274px;
   height: 200px;
-  background-color: #8080801f;
+  background-color:#fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,13 +634,25 @@ a{
 .tell_us{
   width: 100%;
   height: auto;
+  margin-top: 50px;
 }
 
 .sumbite_form{
+  background-color:#fff;
+  border-radius: 10px;
+  padding: 10px;
   display: flex;
-
   flex-direction: column;
+
 }
+.sumbite_form input{
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+
 
 
 
@@ -618,15 +661,91 @@ a{
 
 /* -------------------------------cart css -------------------------------- */
 
+.cart_main_div{
+  width: 100%;
+  height: auto !important;
+  padding: 20px;
+  display: flex;
+}
 
+.total_0f_items{
+  width: 30%;
+  height: 450px;
+  padding: 20px;
+  background-color: #fff;
+  position: sticky !important;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 9px -5px;
+  border-radius: 10px;
+}
+.cart_items{
+  width: 70%;
+  height: auto;
+  padding: 10px;
+  scrollbar-color: red !important;
+}
+.cart_item{
+  width: 338px;
+  height: 150px;
+  float: left;
+  margin: 10px;
+  box-shadow: 0px 0px 9px -4px;
+  border-radius: 10px;
+  
+}
+.product_cart_img{
+  width: 45%;
+  height: 100%;
+  float: left;
+  border-radius: 10px 0px 0px 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+.product_cart_img img{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  border-radius: 5px 0px 0px 5px;
+}
+.product_cart_img img:hover{
+  transform: scale(1.4);
+  transition: 1s;
+}
+.about_cart_product{
+  width: 55%;
+  height: 100%;
+  float: left;
+  padding: 10px;
 
+}
+.price_details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
+}
+.price_details span{
+  color: green;
+}
+.place{
+  width: 200px;
+  height: 50px;
+  background-color: red !important;
+  bottom: 10px;
+  right: 10px;
+}
+.letter{
+  font-size: 11px !important;
+}
 
 
 /* ------------------------------------media qurey----------------------------- */
 
   
-@media only screen and (max-width: 600px  ) {
+@media only screen and (max-width: 600px) {
 
   body{
     font-family: sans-serif !important;
@@ -638,15 +757,18 @@ a{
     background-color: rgb(255 255 255 / 12%) !important;
 }
 
-.navlist{
+.navlist {
+  display: block;
   background-color: black;
   z-index: 999;
   padding: 10px;
   position: absolute;
   top: 70px;
-  width: 93%;
+  width: 48%;
   border-radius: 5px;
   color: white !important;
+  right: 6px;
+  overflow: hidden;
 }
 
 .nav-link{
@@ -834,6 +956,12 @@ width: 146px !important;
 
 .desk-profile{
   display: block;
+  position: absolute;
+  right: 56px;
+}
+.desk-profile .fa{
+  font-size: 24px;
+  margin: 7px 0px;
 }
 .nav-profile{
   display: none;
@@ -903,12 +1031,49 @@ width: 146px !important;
   list-style-type: none;
   font-size: 18px;
 }
+.cart_main_div{
+  width: 100%;
+  height: auto !important;
+  padding: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.total_0f_items{
+  width: 100%;
+  height: 450px;
+  padding: 20px;
+  background-color: #fff;
+  position: static !important;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 0px 9px -5px;
+  border-radius: 10px;
+}
+.cart_items{
+  width: 100%;
+  height: auto;
+  padding: 0px !important;
+  scrollbar-color: red !important;
+}
+.letter{
+  font-size: 8px !important;
+}
 
 }
 
-@media only screen and (max-width: 900px  ) {
 
-  .abutss{
+
+
+/* ------------------------------media min ----------------------------------------- */
+
+
+
+
+@media only screen and (min-width: 601px) and ( max-width:991px) {
+
+  .abutss{  
     display: block;
     color: white !important;
   }
@@ -924,19 +1089,49 @@ width: 146px !important;
     margin: 0px -40px;
   }
 
-  .navlist{
-    background-color: black;
+  .navlist {
+    display: block;
+    background-color: black !important;
     z-index: 999;
     padding: 10px;
     position: absolute;
     top: 70px;
-    width: 93%;
+    width: 48%;
     border-radius: 5px;
     color: white !important;
-  }
+    right: 6px;
+    overflow: hidden;
+}
   
   .nav-link{
     color: white !important;
+  }
+  .desk-profile{
+    display: block;
+    position: absolute;
+    right: 56px;
+  }
+ 
+  .desk-profile .fa{
+    font-size: 24px;
+    margin: 7px 0px;
+  }
+  .nav-profile{
+    display: none;
+  }
+  .navbar-toggler{
+  
+    border: none !important;
+  }
+  
+  .navbar-toggler:focus{
+    box-shadow: none !important;
+  } 
+  .desk-profile ul li{
+    float: left;
+    margin: 7px;
+    list-style-type: none;
+    font-size: 18px;
   }
 }
 

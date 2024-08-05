@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const About = () => {
   return (
 
    <>
   <div className="spacess"></div>
+  <div style={{backgroundColor:'#fff'}}>
   <div className="container">
     <div className="row">
       <div className="col-md-6 about">
@@ -20,7 +23,9 @@ const About = () => {
       </div>
       </div>
       </div>
-      
+      </div>
+      <div style={{backgroundColor:'#fff'}}>
+        <div className="container">
       <div className="col-md-12 teams">
         <h4>A Few Words About</h4>
         <h2>Our Team</h2>
@@ -67,6 +72,24 @@ const About = () => {
         </div>
 
       </div>
+      </div>
+      </div>
+      <div className="container">
+      <div className="followus">
+            <img src={require('../components/img/banner-05.jpg')} alt="" />
+            <div className="followPage">
+              <h1>Follow Us</h1>
+              <div className="footer_icons">
+                   <Link><i class="fa fa-facebook" aria-hidden="true"></i></Link>
+                   <Link><i class="fa fa-twitter" aria-hidden="true"></i></Link>
+                   <Link><i class="fa fa-instagram" aria-hidden="true"></i></Link>
+                   <Link><i class="fa fa-youtube-play" aria-hidden="true"></i></Link>
+                   <Link><i class="fa fa-google" aria-hidden="true"></i></Link>
+
+                </div>
+            </div>
+        </div>
+        </div>
 
   
  

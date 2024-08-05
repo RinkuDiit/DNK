@@ -26,7 +26,7 @@ function Home() {
               </div>
           </div>
           <div className="col-12 page2">
-            
+            <div className="container">
           <Swiper
         spaceBetween={30}
         slidesPerView={5}
@@ -53,8 +53,12 @@ function Home() {
               slidesPerView: 2,
               },
           780: {
-                slidesPerView: 5,
+                slidesPerView: 4,
+          },
+          991:{
+            slidesPerView: 5,
           }
+
         }}
         
 
@@ -68,7 +72,9 @@ function Home() {
 
        
       </Swiper>
+      </div>
           </div>
+          
      
         {/* <div className="container custom-container"> */}
             <div className="row page3">
