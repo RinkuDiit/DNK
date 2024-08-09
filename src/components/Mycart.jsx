@@ -73,14 +73,13 @@ function Mycart() {
     setDiscount(Math.ceil(ttt * 5 / 100))
     setDeliverycharge(150)
     setSecurty(Math.ceil(ttt * 2 / 100))
-    const ss = securty
     if (price < 1500) {
       setCoupons(0);
     };
 
 
 
-  }, [Alldata])
+  }, [Alldata,price,Coupons])
 
   
  useEffect(()=>{
