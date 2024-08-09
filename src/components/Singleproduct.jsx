@@ -9,14 +9,16 @@ function Singleproduct(){
   const[reting,setReting] = useState(0);
   const{id} = useParams();
   const [addcart , setAddcart] = useState([])
-  localStorage.setItem('cart',addcart);
-  localStorage.setItem('cartlenght',addcart.length)
 
   const fallbackImage = 'https://via.placeholder.com/150';  
 
   
   
- 
+ useEffect(()=>{
+  const realcart = localStorage.getItem('realcart');
+  setAddcart(JSON.parse(realcart))
+
+ },[])
 
  
 
@@ -27,6 +29,8 @@ function Singleproduct(){
 
 
     useEffect(() =>{
+
+      
 
     async function fethapi(){
       try {
@@ -54,7 +58,10 @@ function Singleproduct(){
       const addtocart = (e) =>{
         const cartItem = e.target.id;
         setAddcart([...addcart, cartItem]);
+        alert('item added successfuly')
       }
+      localStorage.setItem('cart',JSON.stringify(addcart));
+
 
      
       if (!singleproduct) {

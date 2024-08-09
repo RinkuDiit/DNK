@@ -9,7 +9,9 @@ function Everythings() {
   const [categorie , setcategorie] = useState('products')
   const fallbackImage = 'https://via.placeholder.com/150'; 
 
-  // localStorage.setItem('card',addcart)
+  const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  localStorage.setItem('realcart' , JSON.stringify(cartItems))
+
   
  const categories = (e) =>{
     debugger

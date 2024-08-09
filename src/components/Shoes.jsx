@@ -8,6 +8,9 @@ function Jewelerys() {
   const [Alldata, setAlldata] = useState(null);
   const fallbackImage = 'https://via.placeholder.com/150'; 
 
+  const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  localStorage.setItem('realcart' , JSON.stringify(cartItems))
+
   console.log(Alldata);
 
   useEffect(() => {

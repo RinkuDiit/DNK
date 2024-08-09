@@ -740,6 +740,21 @@ a{
 .letter{
   font-size: 11px !important;
 }
+.totals{
+  border-top:2px solid #2389bf ;
+  border-bottom:2px solid #2389bf ;
+}
+.coupouncode{
+  border: 1px solid;
+  padding: 2px;
+}
+.coupouncode input{
+  border: none;
+}
+.coupouncode input:focus{
+  border: none;
+  outline: none;
+}
 
 
 /* ------------------------------------media qurey----------------------------- */
