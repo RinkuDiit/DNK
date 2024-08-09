@@ -73,10 +73,14 @@ function Mycart() {
     setDiscount(Math.ceil(ttt * 5 / 100))
     setDeliverycharge(150)
     setSecurty(Math.ceil(ttt * 2 / 100))
+    if(Coupons>0){
+        setCoupons(ttt*20/100)
+    }
     if (price < 1500) {
       setCoupons(0);
-    };
-
+    }
+    
+    
 
 
   }, [Alldata,price,Coupons])
@@ -84,17 +88,10 @@ function Mycart() {
   
  useEffect(()=>{
   setTotal(price - discount + securty - Coupons)
- },[price])
+ },[price,price,Coupons])
 
 
-  const removeID = (id) => {
-    const newId = String(id);
-    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    const newCart = cartItems.filter(item => item !== newId);
-    localStorage.setItem('cart', JSON.stringify(newCart));
-    setCart(newCart);
-    setAlldata(Alldata.filter(item => item.id !== id));
-  }
+
 
   const entered_code = (e) => {
     const code = e.target.value;
@@ -109,7 +106,7 @@ function Mycart() {
       setCoupons(coupounDis);
         Swal.fire({
           title: 'Your coupon has been applied successfully!',
-          html: `<p>You saved <span style="color:green;">₹${discount}</span> on your order.</p>`,
+          html: `<p>You saved <span style="color:green;">₹${coupounDis}</span> on your order.</p>`,
           icon: 'success',
           confirmButtonText: 'ok'
       });
@@ -129,7 +126,18 @@ function Mycart() {
         title: "Invalid Coupon",
       });
     }
+  };
+
+
+  const removeID = (id) => {
+    const newId = String(id);
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    const newCart = cartItems.filter(item => item !== newId);
+    localStorage.setItem('cart', JSON.stringify(newCart));
+    setCart(newCart);
+    setAlldata(Alldata.filter(item => item.id !== id));
   }
+
 
   const placeorder= ()=> {
     Swal.fire({
