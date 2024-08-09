@@ -798,6 +798,15 @@ a{
     position: relative;
 }
 
+.page1img {
+  position: absolute;
+  width: 124%;
+  height: 100%;
+  z-index: -999;
+  /* opacity: 0.6; */
+  filter: brightness(0.9);
+}
+
 .pg1_p{
   position: absolute;
   top: 39%;
