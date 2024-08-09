@@ -51,7 +51,7 @@ function Mycart() {
       setAlldata(productsData)
     }
     fetchItems();
-  }, [Alldata])
+  },[])
 
 
 
@@ -63,10 +63,12 @@ function Mycart() {
     const length = Alldata.length
     setTotalitmes(length)
 
+    debugger
+
     const prices = Alldata.map(product => product.price);
     const totalPrice = prices.reduce((total, price) => total + price, 0);
-    const ttt = totalPrice + '0'
-    setPrice(totalPrice + '0')
+    const ttt = totalPrice*10
+    setPrice(totalPrice*10)
 
     setDiscount(Math.ceil(ttt * 5 / 100))
     setDeliverycharge(150)
@@ -75,14 +77,18 @@ function Mycart() {
     if (price < 1500) {
       setCoupons(0);
     };
-    setTotal(ttt - discount + ss - Coupons)
 
 
 
   }, [Alldata])
 
+  
+ useEffect(()=>{
+  setTotal(price - discount + securty - Coupons)
+ },[price])
+
+
   const removeID = (id) => {
-    debugger
     const newId = String(id);
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     const newCart = cartItems.filter(item => item !== newId);
@@ -98,7 +104,7 @@ function Mycart() {
   }
 
   const CouponsDis = () => {
-    debugger
+    
     if (inputCode === 'OFF20' & price >= 1500) {
       const coupounDis = price * .2;
       setCoupons(coupounDis);
