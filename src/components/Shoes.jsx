@@ -1,15 +1,29 @@
 import React from 'react'
 import {useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 
 function Jewelerys() {
 
-  const [Alldata, setAlldata] = useState(null);
+  const [Alldata, setAlldata] = useState([]);
+  const [addcart, setAddcart] = useState(JSON.parse(sessionStorage.getItem('cart')) || [])
+
+  sessionStorage.setItem('realcart', JSON.stringify(addcart))
+
+  const addtocart = (id) => {
+
+    const idstring = String(id)
+    setAddcart([...addcart, idstring]);
+
+    toast.success('Successfully Added')
+  }
+  sessionStorage.setItem('cart', JSON.stringify(addcart));
   const fallbackImage = 'https://via.placeholder.com/150'; 
 
-  const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-  localStorage.setItem('realcart' , JSON.stringify(cartItems))
+  const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+  sessionStorage.setItem('realcart' , JSON.stringify(cartItems))
 
   console.log(Alldata);
 
@@ -62,7 +76,7 @@ function Jewelerys() {
             onError={(e) => e.target.src = fallbackImage}/></Link>
              </div>
           <div className="about_product">
-            <button type='button' id={item.id}  className='btn addtocard' ><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+          <button type='button' onClick={() => addtocart(item.id)} id={item.id} className='btn addtocard' ><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
             <Link style={{textDecoration:'none',color:'black'}} to={'/singleproduct/'+item.id}><h6>{item.title.slice(0, 30)}</h6>
           <h6 className='category_text'>{item.category.name}</h6>
           <p>₹{item.price}0</p></Link>
@@ -73,6 +87,7 @@ function Jewelerys() {
 
         </div>
         </div>
+        <Toaster/>
         </div>
    
   )

@@ -44,7 +44,8 @@ function Footer() {
                 </div>
             </div>
             <div className="col-12 p-3 border-bottom border-top footer_bottom d-flex justify-content-between  ">
-                <p>Copyright © 2024 Brandstore. Powered by Brandstore.</p>
+                <p>Copyright © 2024 Brandstore. Powered by Rinku kumar.</p>
+                
                 <div className="footer_icons">
                    <Link><i class="fa fa-facebook" aria-hidden="true"></i></Link>
                    <Link><i class="fa fa-twitter" aria-hidden="true"></i></Link>

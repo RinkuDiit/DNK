@@ -21,10 +21,11 @@ function Mycart() {
   const [Coupons, setCoupons] = useState(0)
   const [inputCode, setInputCode] = useState('')
   const [total, setTotal] = useState(0)
+  const [render, setRender] = useState(0)
 
   const fallbackImage = 'https://via.placeholder.com/150';
 
-  localStorage.setItem('totalitems', totalitems)
+  sessionStorage.setItem('totalitems', totalitems)
 
 
 
@@ -32,10 +33,11 @@ function Mycart() {
 
   useEffect(() => {
 
-    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    setCart(...cart, cartItems);
-    localStorage.setItem('realcart', JSON.stringify(cartItems))
+    debugger
 
+      const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+      setCart(...cart, cartItems);
+      sessionStorage.setItem('realcart', JSON.stringify(cartItems))
 
 
     const fetchapi = async (id) => {
@@ -51,7 +53,7 @@ function Mycart() {
       setAlldata(productsData)
     }
     fetchItems();
-  },[])
+  },[render]);
 
 
 
@@ -63,7 +65,6 @@ function Mycart() {
     const length = Alldata.length
     setTotalitmes(length)
 
-    debugger
 
     const prices = Alldata.map(product => product.price);
     const totalPrice = prices.reduce((total, price) => total + price, 0);
@@ -130,12 +131,23 @@ function Mycart() {
 
 
   const removeID = (id) => {
+    
     const newId = String(id);
-    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    const newCart = cartItems.filter(item => item !== newId);
-    localStorage.setItem('cart', JSON.stringify(newCart));
-    setCart(newCart);
+    const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+    const index = cartItems.indexOf(newId)
+    
+    if (index > -1) {
+      cartItems.splice(index, 1)
+      }
+    console.log(cartItems)  ;
+
+
+    // const newCart = cartItems.filter(item => item !== newId);
+    sessionStorage.setItem('cart', JSON.stringify(cartItems));
+    setCart(cartItems);
     setAlldata(Alldata.filter(item => item.id !== id));
+    setRender(+1)
+
   }
 
 
@@ -165,7 +177,7 @@ function Mycart() {
           <div className='price_details'><h6>Total Price</h6><div>₹{price}</div></div>
           <div className='price_details'><h6>Discount</h6><div><span>-₹{discount}</span></div></div>
           <div className='price_details'><h6>Coupons for you</h6><div><span>-₹{Coupons}</span></div></div>
-          <div className='price_details'><h6>Delivery Charges</h6><div><span style={{ textDecoration: 'line-through', color: 'black' }}> ₹{deliverycharge}</span><span>Free</span></div></div>
+          <div className='price_details'><h6>Delivery Charges</h6><div><span style={{ textDecoration: 'line-through', color: 'black' }}> ₹{deliverycharge}</span> <span>Free</span></div></div>
           <div className='price_details'><h6>Secured Packaging Fee</h6><div>₹{securty}</div></div>
           <div className='price_details totals'><h4>Total Amount</h4><div><h4>₹{total}</h4></div></div>
           <div className="price_details coupouncode"><input type="text" onChange={entered_code} placeholder='Enter Coupen code' />
@@ -189,7 +201,8 @@ function Mycart() {
                         onError={(e) => e.target.src = fallbackImage} /></Link>
                     </div>
                     <div className="about_cart_product">
-                      <Link style={{ textDecoration: 'none', color: 'black' }} to={'/singleproduct/' + item.id}><h6>{item.title.slice(0, 30)}</h6>
+                      <Link style={{ textDecoration: 'none', color: 'black' }} to={'/singleproduct/' + item.id}>
+                      <h6>{item.title.slice(0, 30)}</h6>
                         <h6 className='category_text'>{item.category.name}</h6>
                         <p>₹{item.price}0</p></Link>
                       <div style={{ margin: '-14px 0px' }}>

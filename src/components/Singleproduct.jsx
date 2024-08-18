@@ -15,7 +15,7 @@ function Singleproduct(){
   
   
  useEffect(()=>{
-  const realcart = localStorage.getItem('realcart');
+  const realcart = sessionStorage.getItem('realcart');
   setAddcart(JSON.parse(realcart))
 
  },[])
@@ -60,7 +60,7 @@ function Singleproduct(){
         setAddcart([...addcart, cartItem]);
         alert('item added successfuly')
       }
-      localStorage.setItem('cart',JSON.stringify(addcart));
+      sessionStorage.setItem('cart',JSON.stringify(addcart));
 
 
      
