@@ -184,6 +184,9 @@ function Myprofile() {
 
                 )))}
             </div>
+            {!Alldata.length ? (
+              <></>
+              ) : (
             <div className="order_delivery">
               <div className='order_prosess_status'><div className=" prosses_statuss dot_">
                 <i class="fa fa-circle-o Confirmed" aria-hidden="true"></i>
@@ -202,7 +205,8 @@ function Myprofile() {
                   <div><p>Shipped</p></div>
                   <div><p>Out for delivery</p></div>
                   <div><p>Delivery Expected in 3 days</p></div>
-                </div></div>
+                </div>
+                </div>
 
               <div className="order_summary">
                 <p>Total Items {totalcount}</p>
@@ -215,7 +219,7 @@ function Myprofile() {
                 <h5>Total Amount {totalamount} <span style={{ color: 'green' }}>1 Offer Applied</span></h5>
               </div>
 
-            </div>
+            </div>)}
 
           </div>
         </div>
