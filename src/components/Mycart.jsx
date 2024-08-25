@@ -33,8 +33,6 @@ function Mycart() {
 
   useEffect(() => {
 
-    debugger
-
       const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
       setCart(...cart, cartItems);
       sessionStorage.setItem('realcart', JSON.stringify(cartItems))
@@ -152,6 +150,19 @@ function Mycart() {
 
 
   const placeorder= ()=> {
+
+    const cartItems = JSON.parse(sessionStorage.getItem('cart')) || [];
+    sessionStorage.setItem('order', JSON.stringify(cartItems))
+    sessionStorage.setItem('orderamount', total)
+    const date =new Date().toDateString();
+    const deliveryDate = new Date().getDate()+3;
+    const time = new Date().toLocaleTimeString();
+    sessionStorage.setItem('date',date);
+    sessionStorage.setItem('time',time);
+    sessionStorage.setItem('deliveryDate',deliveryDate);
+
+
+
     Swal.fire({
       title: 'Your Order has been placed successfully!',
       // text: `You saved ₹${coupounDis} on your order.`,

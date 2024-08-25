@@ -349,8 +349,8 @@ a{
 
 .spacess{
   width: 100%;
-  height: 100px;
-  background-color:white;
+  height: 90px;
+  background-color:white !important;
 }
 
 /* -------------Men component css ---------- */
@@ -756,6 +756,156 @@ a{
 }
 
 
+/* ---------------------------------------profile css-------------------------------- */
+.main_div_profile{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(232, 230, 230);
+}
+
+.profile{
+  width: 23%;
+  height:450px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.profileDetails{
+  width: 75%;
+  height:450px;
+  background-color:#fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.profilepic{
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.profilepic img{
+  width: 60px;
+  height: 100%;
+  border-radius:50%;
+
+}
+
+.aboutOrder{
+  border-bottom: solid 1px;
+  padding: 10px;
+  height: 50px;
+}
+/* .aboutOrder:hover{
+  background-color: #2389bf;
+  cursor: pointer;
+} */
+.aboutOrder:focus{
+  background-color: #2389bf;
+  
+}
+
+.profileDetails .profilepic{
+  display: flex;
+  justify-content: start;
+} 
+
+.profileDetails input{
+  height: 40px;
+  /* background-color: rgb(232, 230, 230); */
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+.edit_info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+
+}
+.order_delivery{
+  border-top: solid 1px ;
+  display: flex;
+  padding: 10px;
+}
+
+.order_summary{
+  width: 58%;
+  height: 300px;
+  /* background-color: red; */
+  padding: 10px;
+}
+
+.order_prosess_status{
+  width: 42%;
+  height: auto;
+  display: flex;
+}
+
+.dot_{
+  width: 2%;
+  height: 300px;
+  display: flex;
+  align-items:center;
+  flex-direction: column;
+  padding: 10px;
+  
+}
+.dot_ i{
+  color: green;
+}
+.prosses{
+  width: 4px;
+  height: 70px;
+  background-color: #b2b2b2;
+}
+.prosses_status{
+  width: 98%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-right: solid;
+}
+ .prosses_status div{
+ height: 84px;
+}
+
+.Confirmed{
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 999;
+  animation: prosses_bar 1s infinite linear;
+
+}
+@keyframes prosses_bar {
+  0% {
+    box-shadow: 0px 0px 0px 0px green;
+  }
+  50% {
+    box-shadow: 0px 0px 9px 3px green;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px green;
+  }
+ 
+}
+
+
+
+
+
 /* ------------------------------------media qurey----------------------------- */
 
   
@@ -1084,6 +1234,39 @@ width: 146px !important;
 .letter{
   font-size: 8px !important;
 }
+.main_div_profile{
+  display: flex !important;
+  flex-direction: column;
+}
+ .main_div_profile .profile, .profileDetails{
+ width: 100%;
+ margin-top: 10px;
+}
+.edit_info {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.order_prosess_status{
+  width: 100%;
+  height: auto;
+}
+.order_delivery {
+  border-top: solid 1px;
+  display: flex;
+  flex-direction: column;
+}
+.prosses_status{
+  border-right:none;
+  border-bottom: solid 1px;
+}
+.order_summary{
+  width: 100%;
+  height: auto;
+}
 
 }
 
@@ -1157,6 +1340,7 @@ width: 146px !important;
     list-style-type: none;
     font-size: 18px;
   }
+ 
 }
 
 
