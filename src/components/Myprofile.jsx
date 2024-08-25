@@ -20,8 +20,8 @@ function Myprofile() {
 
   const date = sessionStorage.getItem('date');
   const time = sessionStorage.getItem('time');
-  const [day, monthName, dates, year] = date.split(' ');
-  const datess = parseInt(dates) + 3;
+  // const [day, monthName, dates, year] = date.split(' ');
+  // const datess = parseInt(dates) + 3;
 
 
 
