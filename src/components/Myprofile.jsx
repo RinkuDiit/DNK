@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import UpdateAddress from './UpdateAddress';
 
 function Myprofile() {
   const [Alldata, setAlldata] = useState([]);
@@ -9,13 +10,16 @@ function Myprofile() {
   const [email, setemail] = useState('rr1341570@gmail.com')
   const [number, setNumber] = useState('9876543238')
   const [btntype, setbtntype] = useState(true)
-  const [change, setChange] = useState('none')
   const [profile_, setProfile] = useState('block')
+  const [change, setChange] = useState('none')
+  const [address__, setAddress] = useState('none')
+  const [pass_, setPass] = useState('none')
   const [text, setText] = useState('Personal Information')
   const [color, setColor] = useState('#2389bf')
   const [color1, setColor1] = useState('#fff')
   const [color2, setColor2] = useState('#fff')
   const [color3, setColor3] = useState('#fff')
+  const [pincode, setPincode] = useState(301604)
   const fallbackImage = 'https://via.placeholder.com/150';
 
   const date = sessionStorage.getItem('date');
@@ -55,6 +59,8 @@ function Myprofile() {
   const profile = () => {
     setChange('none')
     setProfile('block')
+    setAddress('none')
+    setPass('none')
     setText('Personal Information')
     setColor('#2389bf')
     setColor1('#fff')
@@ -65,6 +71,8 @@ function Myprofile() {
   const order = () => {
     setChange('block')
     setProfile('none')
+    setAddress('none')
+    setPass('none')
     setText('Order History')
     setColor('#fff')
     setColor1('#2389bf')
@@ -74,9 +82,11 @@ function Myprofile() {
 
 
   const address = () => {
-    setChange('block')
+    setChange('none')
     setProfile('none')
-    setText('Order History')
+    setAddress('block')
+    setPass('none')
+    setText('Update Address')
     setColor1('#fff')
     setColor('#fff')
     setColor2('#2389bf')
@@ -86,8 +96,10 @@ function Myprofile() {
 
 
   const pass = () => {
-    setChange('block')
+    setChange('none')
     setProfile('none')
+    setAddress('none')
+    setPass('block')
     setText('Order History')
     setColor1('#fff')
     setColor('#fff')
@@ -95,6 +107,9 @@ function Myprofile() {
     setColor3('#2389bf')
 
   }
+
+ 
+  
 
 
 
@@ -222,6 +237,12 @@ function Myprofile() {
             </div>)}
 
           </div>
+
+          {/* ------------------------Address update------------------------------------------ */}
+          <div style={{ display: address__ }}>
+            <UpdateAddress/>
+          </div>        
+
         </div>
       </div>
     </div>

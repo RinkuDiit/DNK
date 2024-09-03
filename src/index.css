@@ -893,6 +893,7 @@ a {
   /* background-color: rgb(232, 230, 230); */
   border: 1px solid gray;
   padding: 5px;
+  
 }
 
 .edit_info {
@@ -979,6 +980,29 @@ a {
     box-shadow: 0px 0px 0px 0px green;
   }
 
+}
+
+
+.updateaddress{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: flex-start;
+  height: 400px;
+}
+.updateaddress div input{
+  margin: 10px;
+}
+.strear{
+  margin: 10px;
+  height: 100px;
+  width: 100%;
+  padding: 5px;
+}
+
+input,textarea:focus{
+   outline: none;
 }
 
 
@@ -1394,6 +1418,23 @@ a {
     width: 100%;
     height: auto;
   }
+  .updateaddress {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    height: auto;
+}
+.updateaddress input{
+  width: 100%;
+  margin: 10px 0px !important;
+}
+.strear{
+  margin: 0px !important;
+  width: 99%;
+  padding: 5px;
+}
 
 }
 
@@ -1474,5 +1515,21 @@ a {
     list-style-type: none;
     font-size: 18px;
   }
+  .updateaddress {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    height: auto;
+}
+
+.profileDetails input{
+  height: 40px;
+  /* background-color: rgb(232, 230, 230); */
+  border: 1px solid gray;
+  padding: 5px;
+  margin: 10px;
+}
 
 }
