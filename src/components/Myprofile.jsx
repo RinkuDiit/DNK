@@ -66,6 +66,7 @@ function Myprofile() {
     setColor1('#fff')
     setColor2('#fff')
     setColor3('#fff')
+    window.scrollTo(0, 0); 
   }
 
   const order = () => {
@@ -78,6 +79,7 @@ function Myprofile() {
     setColor1('#2389bf')
     setColor2('#fff')
     setColor3('#fff')
+    window.scrollTo(0, 0); 
   }
 
 
@@ -91,6 +93,7 @@ function Myprofile() {
     setColor('#fff')
     setColor2('#2389bf')
     setColor3('#fff')
+    window.scrollTo(0, 0); 
 
   }
 
@@ -105,6 +108,7 @@ function Myprofile() {
     setColor('#fff')
     setColor2('#fff')
     setColor3('#2389bf')
+    window.scrollTo(0, 0); 
 
   }
 

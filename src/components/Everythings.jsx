@@ -18,7 +18,7 @@ function Everythings() {
   sessionStorage.setItem('realcart', JSON.stringify(addcart))
 
   const categories = (e) => {
-
+    window.scrollTo(0, 0); 
     const newCategories = e.target.value;
     setcategorie(newCategories)
   }

@@ -15,6 +15,7 @@ function Singleproduct(){
   
   
  useEffect(()=>{
+  window.scrollTo(0, 0); 
   const realcart = sessionStorage.getItem('realcart');
   setAddcart(JSON.parse(realcart))
 
